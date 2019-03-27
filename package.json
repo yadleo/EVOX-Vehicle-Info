@@ -1,0 +1,36 @@
+{
+	"name": "evox-vehicle-info",
+	"version": "1.0.0",
+	"description": "vehicle info component with data from EVOX's API",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack -w & budo ./bundle.js --live --open",
+		"webpack": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yadleo/EVOX-Vehicle-Info.git"
+	},
+	"author": "Daniel Lai",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/yadleo/EVOX-Vehicle-Info/issues"
+	},
+	"homepage": "https://github.com/yadleo/EVOX-Vehicle-Info#readme",
+	"dependencies": {
+		"react": "^16.8.5",
+		"react-dom": "^16.8.5"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.0",
+		"@babel/preset-env": "^7.4.2",
+		"@babel/preset-react": "^7.0.0",
+		"babel-loader": "^8.0.5",
+		"css-loader": "^2.1.1",
+		"mini-css-extract-plugin": "^0.5.0",
+		"react-css-modules": "^4.7.9",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
+	}
+}
