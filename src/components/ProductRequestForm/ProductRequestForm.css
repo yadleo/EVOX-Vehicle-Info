@@ -1,0 +1,88 @@
+.formWrapper {
+	position: relative;
+}
+
+.formContainer {
+	position: absolute;
+	min-width: 45rem;
+	padding: 20px 12px 45px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+
+.formHeader {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.formWrapper label {
+	display: inline;
+	margin: 0 0 15px 0;
+}
+
+.formWrapper label > span {
+	width: 20rem;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+/* COLOR */
+.red {
+	color: red;
+}
+
+/* fields */
+.formWrapper input.inputField,
+.formWrapper .selectField {
+	width: 48%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #c2c2c2;
+	box-shadow: 1px 1px 4px #ebebeb;
+	-moz-box-shadow: 1px 1px 4px #ebebeb;
+	-webkit-box-shadow: 1px 1px 4px #ebebeb;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.formWrapper .inputField:focus,
+.formWrapper .selectField:focus {
+	border: 1px solid #0c0;
+}
+
+/* */
+.formWrapper input[type="submit"],
+.formWrapper input[type="reset"] {
+	border: none;
+	padding: 8px 15px 8px 15px;
+	margin-right: 3px;
+	background: #ff8500;
+	color: #fff;
+	box-shadow: 1px 1px 4px #dadada;
+	-moz-box-shadow: 1px 1px 4px #dadada;
+	-webkit-box-shadow: 1px 1px 4px #dadada;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.formWrapper input[type="submit"]:hover,
+.formWrapper input[type="reset"]:hover {
+	background: #ea7b00;
+	color: #fff;
+}
+
+.buttons {
+	position: absolute;
+	top: 78%;
+	left: 63%;
+}

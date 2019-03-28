@@ -1,5 +1,7 @@
 .App__app__3l6tU {
 	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .Info__vehicleInfo__31EJU {
@@ -87,4 +89,92 @@
 	text-transform: uppercase;
 }
 
+.ProductRequestForm__formWrapper__1FOlX {
+	position: relative;
+}
+
+.ProductRequestForm__formContainer__1QlgS {
+	position: absolute;
+	min-width: 45rem;
+	padding: 20px 12px 45px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+
+.ProductRequestForm__formHeader__1ZZ3f {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.ProductRequestForm__formWrapper__1FOlX label {
+	display: inline;
+	margin: 0 0 15px 0;
+}
+
+.ProductRequestForm__formWrapper__1FOlX label > span {
+	width: 20rem;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+/* COLOR */
+.ProductRequestForm__red__1LsQi {
+	color: red;
+}
+
+/* fields */
+.ProductRequestForm__formWrapper__1FOlX input.ProductRequestForm__inputField__38yPw,
+.ProductRequestForm__formWrapper__1FOlX .ProductRequestForm__selectField__3Bdwo {
+	width: 48%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #c2c2c2;
+	box-shadow: 1px 1px 4px #ebebeb;
+	-moz-box-shadow: 1px 1px 4px #ebebeb;
+	-webkit-box-shadow: 1px 1px 4px #ebebeb;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.ProductRequestForm__formWrapper__1FOlX .ProductRequestForm__inputField__38yPw:focus,
+.ProductRequestForm__formWrapper__1FOlX .ProductRequestForm__selectField__3Bdwo:focus {
+	border: 1px solid #0c0;
+}
+
+/* */
+.ProductRequestForm__formWrapper__1FOlX input[type="submit"],
+.ProductRequestForm__formWrapper__1FOlX input[type="reset"] {
+	border: none;
+	padding: 8px 15px 8px 15px;
+	margin-right: 3px;
+	background: #ff8500;
+	color: #fff;
+	box-shadow: 1px 1px 4px #dadada;
+	-moz-box-shadow: 1px 1px 4px #dadada;
+	-webkit-box-shadow: 1px 1px 4px #dadada;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.ProductRequestForm__formWrapper__1FOlX input[type="submit"]:hover,
+.ProductRequestForm__formWrapper__1FOlX input[type="reset"]:hover {
+	background: #ea7b00;
+	color: #fff;
+}
+
+.ProductRequestForm__buttons__Mev8z {
+	position: absolute;
+	top: 78%;
+	left: 63%;
+}
 
