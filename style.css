@@ -4,9 +4,86 @@
 
 .Info__vehicleInfo__31EJU {
 	display: block;
-	width: 68.5rem;
-	height: 25rem;
-	background-color: white;
+	width: 75rem;
+	height: 140rem;
+	padding: 3rem;
+	background-color: rgb(246, 246, 246);
 	/* max-width: 26rem; */
+}
+
+.InfoDetails__infoDetails__1q9vF {
+	width: 100%;
+	padding: 4rem;
+	background-color: rgb(255, 255, 255);
+}
+
+.InfoDetails__row__2jE1l {
+	max-width: 114rem;
+	margin: 0 auto;
+	/* margin-bottom: 8rem; */
+}
+/* Clear Fix */
+.InfoDetails__row__2jE1l::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.InfoDetails__col-1-of-2__TmKZf {
+	width: calc((100% - 4rem) / 2);
+	float: left;
+	/* background-color: red; */
+}
+.InfoDetails__col-1-of-2__TmKZf:not(:last-child) {
+	margin-right: 4rem;
+}
+
+.InfoDetails__borderBottom__wNARC {
+	border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+/* colors */
+.InfoDetails__grey-dark__2cPHU {
+	color: rgb(166, 166, 166);
+}
+.InfoDetails__grey-dark-2__2rj5i {
+	color: rgb(95, 95, 95);
+}
+.InfoDetails__grey-dark-3__1wz9F {
+	color: rgb(26, 26, 26);
+}
+.InfoDetails__black__22p6K {
+	color: rgb(0, 0, 0);
+}
+.InfoDetails__primary__19YVq {
+	color: rgb(252, 91, 32);
+}
+.InfoDetails__primary-light__3yRTK {
+	color: rgb(255, 90, 0);
+}
+.InfoDetails__primary-dark__YRU9K {
+	color: rgb(239, 85, 0);
+}
+
+/* typography */
+
+.InfoDetails__font-XXL__im5L9 {
+	font-size: 8rem;
+}
+.InfoDetails__font-XL__1kjsw {
+	font-size: 6rem;
+}
+.InfoDetails__font-L__jAuxL {
+	font-size: 4rem;
+}
+.InfoDetails__font-M__xkuyU {
+	font-size: 2.4rem;
+}
+.InfoDetails__font-S__3Vt0d {
+	font-size: 1.8rem;
+}
+
+.InfoDetails__uppercase__2FxME {
+	text-transform: uppercase;
 }
 

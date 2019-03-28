@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CssModules from "react-css-modules";
 import styles from "./Info.css";
+import InfoDetails from "./InfoDetails/InfoDetails";
 
 class VehicleInfo extends Component {
 	render() {
@@ -10,7 +11,9 @@ class VehicleInfo extends Component {
 					className="testImg"
 					src="https://dbhdyzvm8lm25.cloudfront.net/color_0640_032_png/MY2015/10155/10155_cc0640_032_G1E.png"
 					alt="test image"
+					style={{ backgroundColor: "red" }}
 				/>
+				<InfoDetails />
 			</div>
 		);
 	}

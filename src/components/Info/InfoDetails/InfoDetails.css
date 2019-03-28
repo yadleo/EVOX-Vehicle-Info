@@ -1,0 +1,75 @@
+.infoDetails {
+	width: 100%;
+	padding: 4rem;
+	background-color: rgb(255, 255, 255);
+}
+
+.row {
+	max-width: 114rem;
+	margin: 0 auto;
+	/* margin-bottom: 8rem; */
+}
+/* Clear Fix */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-1-of-2 {
+	width: calc((100% - 4rem) / 2);
+	float: left;
+	/* background-color: red; */
+}
+.col-1-of-2:not(:last-child) {
+	margin-right: 4rem;
+}
+
+.borderBottom {
+	border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+/* colors */
+.grey-dark {
+	color: rgb(166, 166, 166);
+}
+.grey-dark-2 {
+	color: rgb(95, 95, 95);
+}
+.grey-dark-3 {
+	color: rgb(26, 26, 26);
+}
+.black {
+	color: rgb(0, 0, 0);
+}
+.primary {
+	color: rgb(252, 91, 32);
+}
+.primary-light {
+	color: rgb(255, 90, 0);
+}
+.primary-dark {
+	color: rgb(239, 85, 0);
+}
+
+/* typography */
+
+.font-XXL {
+	font-size: 8rem;
+}
+.font-XL {
+	font-size: 6rem;
+}
+.font-L {
+	font-size: 4rem;
+}
+.font-M {
+	font-size: 2.4rem;
+}
+.font-S {
+	font-size: 1.8rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}

@@ -1,4 +1,5 @@
 const path = require("path");
+const Dotenv = require("dotenv-webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const SRC_DIR = path.join(__dirname, "/src");
 const DIST_DIR = path.join(__dirname, "/");
@@ -35,6 +36,6 @@ module.exports = {
 		]
 	},
 	resolve: { extensions: [".js", ".jsx"] },
-	plugins: [new MiniCssExtractPlugin({ filename: "style.css" })],
+	plugins: [new Dotenv(), new MiniCssExtractPlugin({ filename: "style.css" })],
 	mode: "development"
 };
