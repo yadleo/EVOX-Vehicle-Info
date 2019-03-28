@@ -24,7 +24,7 @@ class App extends Component {
 	// 	})
 	// };
 	render() {
-		// console.log("dotenv:", process.env.REACT_APP_ROOT_URL);
+		console.log("dotenv:", process.env.REACT_APP_ROOT_URL);
 		return (
 			<div styleName="app">
 				<Info />
