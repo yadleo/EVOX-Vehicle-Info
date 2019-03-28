@@ -1,7 +1,8 @@
 .App__app__3l6tU {
 	margin: 2rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 .Info__vehicleInfo__31EJU {
@@ -94,9 +95,9 @@
 }
 
 .ProductRequestForm__formContainer__1QlgS {
-	position: absolute;
-	min-width: 45rem;
-	padding: 20px 12px 45px 20px;
+	/* position: absolute; */
+	width: 45rem;
+	padding: 20px 12px 20px 20px;
 	font: 13px Arial, Helvetica, sans-serif;
 	background-color: white;
 }
@@ -173,8 +174,7 @@
 }
 
 .ProductRequestForm__buttons__Mev8z {
-	position: absolute;
-	top: 78%;
-	left: 63%;
+	margin-top: 1rem;
+	margin-left: 25rem;
 }
 
