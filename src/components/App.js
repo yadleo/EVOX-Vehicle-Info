@@ -44,7 +44,7 @@ class App extends Component {
 	render() {
 		return (
 			<div styleName="app">
-				<Info />
+				<Info vehicle={this.state.data.vehicle} />
 				<ProductRequestForm requestVehicleData={this.requestVehicleData} />
 			</div>
 		);

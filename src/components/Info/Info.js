@@ -13,7 +13,7 @@ class VehicleInfo extends Component {
 					alt="test image"
 					style={{ backgroundColor: "red" }}
 				/>
-				<InfoDetails />
+				<InfoDetails vehicle={this.props.vehicle} />
 			</div>
 		);
 	}
