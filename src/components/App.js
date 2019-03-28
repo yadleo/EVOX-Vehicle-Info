@@ -4,6 +4,7 @@ import CssModules from "react-css-modules";
 import styles from "./App.css";
 // Components
 import Info from "./Info/Info";
+import ProductRequestForm from "./ProductRequestForm/ProductRequestForm";
 
 class App extends Component {
 	state = {
@@ -21,26 +22,30 @@ class App extends Component {
 			process.env.ROOT_URL
 		}/vehicles/${vifnum}/products/${product_id}/${product_type_id}`;
 
+		console.log(
+			`Sending request to to EVOX for vifnum: ${vifnum}, product_id: ${product_id}, and product_type_id${product_type_id}`
+		);
 		const data = await fetch(url, {
 			method: "GET",
 			headers: {
 				"x-api-key": process.env.EVOX_API_KEY
 			}
 		}).then(res => res.json());
-		return data;
+		this.setState({ data }, console.log("Updated state with new vehicle data"));
 	};
 
 	componentDidMount() {
 		const { vifnum, product_id, product_type_id } = this.state.selectedProduct;
-		this.requestVehicleData(vifnum, product_id, product_type_id)
-			.then(data => this.setState({ data }))
-			.catch(err => console.log(err));
+		// this.requestVehicleData(vifnum, product_id, product_type_id)
+		// 	.then(data => this.setState({ data }))
+		// 	.catch(err => console.log(err));
 	}
 
 	render() {
 		return (
 			<div styleName="app">
 				<Info />
+				<ProductRequestForm requestVehicleData={this.requestVehicleData} />
 			</div>
 		);
 	}
