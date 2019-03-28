@@ -19,11 +19,13 @@
 	},
 	"homepage": "https://github.com/yadleo/EVOX-Vehicle-Info#readme",
 	"dependencies": {
+		"@babel/polyfill": "^7.4.0",
 		"react": "^16.8.5",
 		"react-dom": "^16.8.5"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.0",
+		"@babel/plugin-proposal-class-properties": "^7.4.0",
 		"@babel/preset-env": "^7.4.2",
 		"@babel/preset-react": "^7.0.0",
 		"babel-loader": "^8.0.5",
