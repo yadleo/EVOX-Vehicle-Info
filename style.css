@@ -8,6 +8,7 @@
 .Info__vehicleInfo__31EJU {
 	display: block;
 	width: 75rem;
+	padding: 3rem;
 	background-color: rgb(246, 246, 246);
 	/* max-width: 26rem; */
 }
@@ -40,10 +41,17 @@
 	margin-right: 4rem;
 }
 
+/* position */
+.InfoDetails__relative__aDLta {
+	position: relative;
+}
+
+/* border */
 .InfoDetails__borderBottom__wNARC {
 	border-bottom: 2px solid rgb(229, 229, 229);
 }
 
+/* margin */
 .InfoDetails__marginBottom-S__3JVZH {
 	margin-bottom: 1rem;
 }
@@ -103,6 +111,40 @@
 
 .InfoDetails__uppercase__2FxME {
 	text-transform: uppercase;
+}
+
+.InfoBubble__infoBubble__N6pLo {
+	display: inline;
+	position: absolute;
+	padding: 1.5rem 4rem;
+	border-radius: 10rem;
+	font-size: 2.2rem;
+}
+
+.InfoBubble__bgOrange__3dYZ_ {
+	background-color: rgb(252, 91, 32);
+}
+
+.InfoBubble__bgWhite__2XKOF {
+	background-color: white;
+}
+
+/* top */
+.InfoBubble__top-eighty__2IDdp {
+	top: 80%;
+}
+
+.InfoBubble__top-ninety__4lY2a {
+	top: 90%;
+}
+
+/* left */
+.InfoBubble__left-negFive__1R10u {
+	left: -5%;
+}
+
+.InfoBubble__left-negTen__3NXy1 {
+	left: -10%;
 }
 
 .ProductRequestForm__formWrapper__1FOlX {

@@ -26,10 +26,17 @@
 	margin-right: 4rem;
 }
 
+/* position */
+.relative {
+	position: relative;
+}
+
+/* border */
 .borderBottom {
 	border-bottom: 2px solid rgb(229, 229, 229);
 }
 
+/* margin */
 .marginBottom-S {
 	margin-bottom: 1rem;
 }

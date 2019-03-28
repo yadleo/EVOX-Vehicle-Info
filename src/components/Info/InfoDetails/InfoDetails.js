@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CssModules from "react-css-modules";
 import styles from "./InfoDetails.css";
+import InfoBubble from "../InfoBubble/InfoBubble";
 
 class InfoDetails extends Component {
 	render() {
@@ -23,7 +24,13 @@ class InfoDetails extends Component {
 					</div>
 				</section>
 
-				<section styleName="borderBottom marginBottom-XL">
+				<section styleName="relative borderBottom marginBottom-XL">
+					<InfoBubble
+						text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+						bgColor="bgOrange"
+						top="top-eighty"
+						left="left-negTen"
+					/>
 					<div styleName="row">
 						<div styleName="col-1-of-2">
 							<h3 styleName="font-M-Plus marginBottom-S black">
@@ -43,7 +50,13 @@ class InfoDetails extends Component {
 				</section>
 
 				{/* Payment Options */}
-				<section styleName="borderBottom marginBottom-M">
+				<section styleName="relative borderBottom marginBottom-M">
+					<InfoBubble
+						text="3 Yr Loan Alternative"
+						bgColor="bgWhite"
+						top="top-ninety"
+						left="left-negFive"
+					/>
 					<div styleName="row">
 						<div styleName="col-1-of-2">
 							<h3 styleName="font-L marginBottom-M black">Monthly Pymt.</h3>
