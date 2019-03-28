@@ -1,8 +1,6 @@
 .vehicleInfo {
 	display: block;
 	width: 75rem;
-	height: 140rem;
-	padding: 3rem;
 	background-color: rgb(246, 246, 246);
 	/* max-width: 26rem; */
 }

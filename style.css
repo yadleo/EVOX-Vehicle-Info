@@ -8,8 +8,6 @@
 .Info__vehicleInfo__31EJU {
 	display: block;
 	width: 75rem;
-	height: 140rem;
-	padding: 3rem;
 	background-color: rgb(246, 246, 246);
 	/* max-width: 26rem; */
 }
@@ -20,6 +18,7 @@
 	background-color: rgb(255, 255, 255);
 }
 
+/* Customer Grid */
 .InfoDetails__row__2jE1l {
 	max-width: 114rem;
 	margin: 0 auto;
@@ -42,7 +41,20 @@
 }
 
 .InfoDetails__borderBottom__wNARC {
-	border-bottom: 1px solid rgb(229, 229, 229);
+	border-bottom: 2px solid rgb(229, 229, 229);
+}
+
+.InfoDetails__marginBottom-S__3JVZH {
+	margin-bottom: 1rem;
+}
+.InfoDetails__marginBottom-M__3vUW7 {
+	margin-bottom: 3rem;
+}
+.InfoDetails__marginBottom-L__23SZx {
+	margin-bottom: 6rem;
+}
+.InfoDetails__marginBottom-XL__3TT78 {
+	margin-bottom: 8rem;
 }
 
 /* colors */
@@ -71,13 +83,16 @@
 /* typography */
 
 .InfoDetails__font-XXL__im5L9 {
-	font-size: 8rem;
+	font-size: 9rem;
 }
 .InfoDetails__font-XL__1kjsw {
 	font-size: 6rem;
 }
 .InfoDetails__font-L__jAuxL {
 	font-size: 4rem;
+}
+.InfoDetails__font-M-Plus__KluCu {
+	font-size: 3.3rem;
 }
 .InfoDetails__font-M__xkuyU {
 	font-size: 2.4rem;
