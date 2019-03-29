@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import "@babel/polyfill";
 import CssModules from "react-css-modules";
 import styles from "./App.css";
+import { sampleData } from "../../sample_JSON_response";
 // Components
 import Info from "./Info/Info";
 import ProductRequestForm from "./ProductRequestForm/ProductRequestForm";
 
 class App extends Component {
 	state = {
-		data: {},
+		data: sampleData,
 		selectedProduct: {
 			vifnum: 10155,
 			product_id: 2,
@@ -23,28 +24,35 @@ class App extends Component {
 		}/vehicles/${vifnum}/products/${product_id}/${product_type_id}`;
 
 		console.log(
-			`Sending request to to EVOX for vifnum: ${vifnum}, product_id: ${product_id}, and product_type_id${product_type_id}`
+			`Sending request to to EVOX for vifnum: ${vifnum}, product_id: ${product_id}, and product_type_id: ${product_type_id}`
 		);
 		const data = await fetch(url, {
 			method: "GET",
 			headers: {
 				"x-api-key": process.env.EVOX_API_KEY
 			}
-		}).then(res => res.json());
-		this.setState({ data }, console.log("Updated state with new vehicle data"));
+		})
+			.then(res => res.json())
+			.catch(err => console.log(err));
+		if (data.status === "success") {
+			this.setState(
+				{ data },
+				console.log("Updated state with new vehicle data")
+			);
+		} else {
+			window.alert(data.message);
+		}
 	};
 
 	componentDidMount() {
 		const { vifnum, product_id, product_type_id } = this.state.selectedProduct;
-		// this.requestVehicleData(vifnum, product_id, product_type_id)
-		// 	.then(data => this.setState({ data }))
-		// 	.catch(err => console.log(err));
+		this.requestVehicleData(vifnum, product_id, product_type_id);
 	}
 
 	render() {
 		return (
 			<div styleName="app">
-				<Info vehicle={this.state.data.vehicle} />
+				<Info vehicle={this.state.data.vehicle} urls={this.state.data.urls} />
 				<ProductRequestForm requestVehicleData={this.requestVehicleData} />
 			</div>
 		);

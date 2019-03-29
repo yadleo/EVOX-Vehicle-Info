@@ -1,7 +1,7 @@
 // Example Vehicle Product Endpoint
-const endpoint = `${ROOT_URL}vehicles/:vifnum/products/:productId/:productTypeId`;
+// const endpoint = `${ROOT_URL}vehicles/:vifnum/products/:productId/:productTypeId`;
 
-const sampleDate = {
+const sampleData = {
 	status: "success",
 	vehicle: {
 		vifnum: 10155,
@@ -57,3 +57,5 @@ const sampleDate = {
 		"https://dbhdyzvm8lm25.cloudfront.net/color_0640_032_png/MY2015/10155/10155_cc0640_032_GXH.png"
 	]
 };
+
+export { sampleData };

@@ -9,9 +9,8 @@ class VehicleInfo extends Component {
 			<div styleName="vehicleInfo">
 				<img
 					className="testImg"
-					src="https://dbhdyzvm8lm25.cloudfront.net/color_0640_032_png/MY2015/10155/10155_cc0640_032_G1E.png"
-					alt="test image"
-					style={{ backgroundColor: "red" }}
+					src={this.props.urls[0]}
+					alt={this.props.vehicle.vehicle_str}
 				/>
 				<InfoDetails vehicle={this.props.vehicle} />
 			</div>
