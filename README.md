@@ -7,8 +7,8 @@ This repo contains a mock vehicle information component utilizing data from EVOX
 - As a user, I can view a vehicle image and information on page load.
 - As a user, I can view vehicle image from EVOX's API
 - As a user, I can request new vehicle base on vif number and product type ID.
-- As a user, I can view updated vehicle image and information on a successful request.
-- As a user, I will be notified of as unsuccessful request.
+- As a user, I can view the updated vehicle image and information on a successful request.
+- As a user, I will be notified of an unsuccessful request.
 
 ## Build and Run
 
