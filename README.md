@@ -13,7 +13,7 @@ This repo contains a mock vehicle information component utilizing data from EVOX
 ## Build and Run
 
 1. fork and clone the repo
-2. cd into directory
+2. cd into the directory
 
 ```shell
 cd EVOX-Vehicle-Info
