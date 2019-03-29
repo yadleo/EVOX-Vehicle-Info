@@ -1,6 +1,3 @@
-// Example Vehicle Product Endpoint
-// const endpoint = `${ROOT_URL}vehicles/:vifnum/products/:productId/:productTypeId`;
-
 const sampleData = {
 	status: "success",
 	vehicle: {

@@ -60,7 +60,6 @@ class InfoDetails extends Component {
 					</div>
 				</section>
 
-				{/* Payment Options */}
 				<section styleName="relative borderBottom marginBottom-M">
 					<InfoBubble
 						text="3 Yr Loan Alternative"
@@ -80,7 +79,6 @@ class InfoDetails extends Component {
 					</div>
 				</section>
 
-				{/* Alternative */}
 				<section styleName="borderBottom marginBottom-M">
 					<div styleName="row">
 						<div styleName="col-1-of-2">

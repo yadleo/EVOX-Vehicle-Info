@@ -17,15 +17,11 @@ class App extends Component {
 		}
 	};
 
-	// Get one product for a vehicle based on product type ID
 	requestVehicleData = async (vifnum, product_id, product_type_id) => {
 		const url = `${
 			process.env.ROOT_URL
 		}/vehicles/${vifnum}/products/${product_id}/${product_type_id}`;
 
-		console.log(
-			`Sending request to to EVOX for vifnum: ${vifnum}, product_id: ${product_id}, and product_type_id: ${product_type_id}`
-		);
 		const data = await fetch(url, {
 			method: "GET",
 			headers: {
@@ -35,10 +31,7 @@ class App extends Component {
 			.then(res => res.json())
 			.catch(err => console.log(err));
 		if (data.status === "success") {
-			this.setState(
-				{ data },
-				console.log("Updated state with new vehicle data")
-			);
+			this.setState({ data });
 		} else {
 			window.alert(data.message);
 		}
